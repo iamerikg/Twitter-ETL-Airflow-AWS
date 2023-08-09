@@ -86,6 +86,6 @@ The `twitter_dag.py` script defines an Apache Airflow DAG for performing an Extr
 
 ## Author
 
-[Erick Garcia]
+[Erick Garcia](https://www.linkedin.com/in/erickmanalastasgarcia/)
 
 
