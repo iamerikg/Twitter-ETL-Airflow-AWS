@@ -1,7 +1,7 @@
 # Twitter-ETL-Airflow-AWS
-This project showcases an Apache Airflow DAG that performs Extract, Transform, Load (ETL) on Twitter data. It utilizes the power of AWS services, including EC2 for processing and S3 for storage, creating a seamless end-to-end data pipeline.
+This project showcases an Apache Airflow DAG that performs Extract, Transform, Load (ETL) on Twitter data using Twitter API v2. It leverages the power of AWS services, including EC2 for processing and S3 for storage, creating a seamless end-to-end data pipeline.
 
-The `twitter_dag.py` script defines an Apache Airflow DAG for performing an Extract, Transform, Load (ETL) process on Twitter data. It fetches tweets from a specified user's timeline and stores the refined data in an Amazon S3 bucket.
+The `twitter_dag.py` script defines an Apache Airflow DAG for performing an Extract, Transform, Load (ETL) process on Twitter data. It fetches tweets from a specified user's timeline using Twitter API v2 and stores the refined data in an Amazon S3 bucket.
 
 ## Prerequisites
 
@@ -12,6 +12,11 @@ The `twitter_dag.py` script defines an Apache Airflow DAG for performing an Extr
 - pandas library installed (`pip install pandas`).
 - s3fs library installed (`pip install s3fs`).
 - Amazon Web Services (AWS) account with access to EC2 and S3 services.
+- Upgraded Twitter Developer account with access to Twitter API v2.
+
+## Twitter API v2 and Pricing
+
+This project is designed to work with Twitter API v2, as Twitter API v1 no longer supports extracting tweets. It's important to note that using Twitter API v2 might come with associated costs. Please refer to the [Twitter API Pricing](https://developer.twitter.com/en/pricing) page for information about pricing tiers and any potential fees.
 
 ## Configuration
 
@@ -39,6 +44,8 @@ The `twitter_dag.py` script defines an Apache Airflow DAG for performing an Extr
 1. Create an S3 bucket in your AWS account to store the refined tweet data. Refer to the [AWS S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) for guidance on creating a bucket.
 
 2. Configure appropriate access permissions for the S3 bucket and objects.
+
+... (Rest of the document remains the same)
 
 ## DAG Configuration
 
@@ -87,5 +94,6 @@ The `twitter_dag.py` script defines an Apache Airflow DAG for performing an Extr
 ## Author
 
 [Erick Garcia](https://www.linkedin.com/in/erickmanalastasgarcia/)
+
 
 
