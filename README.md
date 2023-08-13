@@ -45,8 +45,6 @@ This project is designed to work with Twitter API v2, as Twitter API v1 no longe
 
 2. Configure appropriate access permissions for the S3 bucket and objects.
 
-... (Rest of the document remains the same)
-
 ## DAG Configuration
 
 1. Clone or download this repository to your EC2 instance.
